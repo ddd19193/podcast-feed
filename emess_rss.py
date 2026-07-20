@@ -131,11 +131,17 @@ def normalize_episode(raw):
     date_str = raw.get("date", "")
     pub_date = local_to_rfc822(date_str)
 
-    # קובץ השמע - מנסה כמה מקומות אפשריים במבנה
+    # קובץ השמע - מנסה כמה מקומות אפשריים במבנה.
+    # לפעמים כל פריט ברשימה הוא dict ({"audio_file": "..."}), ולפעמים
+    # (במבנה נתונים ישן/שונה) הפריט הוא string ישירות - מטפלים בשני המקרים.
     audio_url = ""
     audio_list = raw.get("audio_in_content") or raw.get("extra_data", {}).get("audios_in_content")
     if audio_list and isinstance(audio_list, list) and len(audio_list) > 0:
-        audio_url = audio_list[0].get("audio_file", "")
+        first = audio_list[0]
+        if isinstance(first, dict):
+            audio_url = first.get("audio_file", "")
+        elif isinstance(first, str):
+            audio_url = first
 
     # תמונה - featured media forced, אם קיים
     image = ""
@@ -212,7 +218,16 @@ def main():
 
     print(f"[2/4] שולף את כל הפרקים המתויגים ב-{TAXONOMY}={TERM_ID}...")
     raw_episodes = fetch_all_episodes(TERM_ID)
-    episodes = [normalize_episode(ep) for ep in raw_episodes]
+    episodes = []
+    skipped = 0
+    for ep in raw_episodes:
+        try:
+            episodes.append(normalize_episode(ep))
+        except Exception as e:
+            skipped += 1
+            print(f"  [!] דילוג על פרק פגום (id={ep.get('id', '?')}): {e}")
+    if skipped:
+        print(f"      דולגו {skipped} פרקים עם מבנה נתונים לא תקין")
     episodes = [ep for ep in episodes if ep["audio_url"]]
     episodes.sort(key=lambda e: e["pub_date"], reverse=True)
     print(f"      נמצאו {len(episodes)} פרקים עם קובץ שמע תקין")
