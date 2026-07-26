@@ -5,6 +5,11 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+
+concurrency:
+  group: podcast-feed-update
+  cancel-in-progress: false
+
 jobs:
   update-feed:
     runs-on: ubuntu-latest
@@ -16,9 +21,18 @@ jobs:
       - run: pip install requests
       - run: python3 emess_rss.py
       - run: python3 emess_rss_527.py
+      - run: python3 emess_rss_453.py
+      - run: python3 emess_rss_394.py
+      - run: python3 emess_rss_455.py
+      - run: python3 emess_rss_452.py
+      - run: python3 emess_rss_421.py
+      - run: python3 emess_rss_447.py
+      - run: python3 emess_rss_506.py
+      - run: python3 emess_rss_53359.py
       - run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add feed.xml state.json feed_527.xml state_527.json
-          git diff --staged --quiet || git commit -m "Update podcast feed"
+          git add feed.xml state.json feed_527.xml state_527.json feed_453.xml state_453.json feed_394.xml state_394.json feed_455.xml state_455.json feed_452.xml state_452.json feed_421.xml state_421.json feed_447.xml state_447.json feed_506.xml state_506.json feed_53359.xml state_53359.json
+          git diff --staged --quiet || git commit -m "Update podcast feeds"
+          git pull --rebase origin main
           git push
