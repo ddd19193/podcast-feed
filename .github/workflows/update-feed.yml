@@ -33,7 +33,7 @@ jobs:
       - run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add feed.xml state.json feed_527.xml state_527.json feed_453.xml state_453.json feed_394.xml state_394.json feed_455.xml state_455.json feed_452.xml state_452.json feed_421.xml state_421.json feed_447.xml state_447.json feed_506.xml state_506.json feed_53359.xml state_53359.json
+          git add feed.xml state.json feed_527.xml state_527.json feed_453.xml state_453.json feed_394.xml state_394.json feed_455.xml state_455.json feed_452.xml state_452.json feed_421.xml state_421.json feed_447.xml state_447.json feed_506.xml state_506.json feed_53359.xml state_53359.json feed_kolbarama_800.xml state_kolbarama_800.json
           git diff --staged --quiet || git commit -m "Update podcast feeds"
           git pull --rebase origin main
           git push
