@@ -58,7 +58,12 @@ STATE_FILE = "state_kolbarama_800.json"
 REQUEST_TIMEOUT = 20
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (compatible; PodcastFeedBuilder/1.0)"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                  "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Language": "he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7",
+    "Referer": BASE_URL + "/",
+    "Connection": "keep-alive",
 }
 
 # ======================================================================
@@ -74,14 +79,13 @@ def fetch_more_pages():
     page = 2
     while page <= MAX_PAGES:
         try:
-            resp = requests.post(
+            resp = SESSION.post(
                 AJAX_URL,
                 data={
                     "action": "load_more_past_shows",
                     "paged": page,
                     "data_show_id": DATA_SHOW_ID,
                 },
-                headers=HEADERS,
                 timeout=REQUEST_TIMEOUT,
             )
             if resp.status_code != 200:
@@ -109,9 +113,21 @@ def fetch_more_pages():
     return "\n".join(all_extra_html)
 
 
+SESSION = requests.Session()
+SESSION.headers.update(HEADERS)
+
+
+def warm_up_session():
+    """מבצע בקשה ראשונית לדף הבית כדי לקבל עוגיות (cookies) אם יש הגנת בוטים."""
+    try:
+        SESSION.get(BASE_URL + "/", timeout=REQUEST_TIMEOUT)
+    except requests.RequestException:
+        pass  # לא קריטי אם זה נכשל - ננסה להמשיך בכל מקרה
+
+
 def fetch_show_page():
     try:
-        resp = requests.get(SHOW_PAGE_URL, headers=HEADERS, timeout=REQUEST_TIMEOUT)
+        resp = SESSION.get(SHOW_PAGE_URL, timeout=REQUEST_TIMEOUT)
         if resp.status_code != 200:
             print(f"  [!] {SHOW_PAGE_URL} -> HTTP {resp.status_code}")
             return None
@@ -230,6 +246,9 @@ def save_state(state):
 
 
 def main():
+    print("[0/4] מבצע ביקור חימום בדף הבית (לקבלת עוגיות אם צריך)...")
+    warm_up_session()
+
     print(f"[1/4] מוריד את דף התוכנית: {SHOW_PAGE_URL}")
     page_html = fetch_show_page()
     if not page_html:
