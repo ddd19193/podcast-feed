@@ -113,7 +113,14 @@ def fetch_more_pages():
     return "\n".join(all_extra_html)
 
 
-SESSION = requests.Session()
+try:
+    import cloudscraper
+    SESSION = cloudscraper.create_scraper(
+        browser={"browser": "chrome", "platform": "windows", "desktop": True}
+    )
+except ImportError:
+    # אם cloudscraper לא מותקן, נופלים בחזרה ל-requests רגיל (פחות סיכוי לעבור חסימות)
+    SESSION = requests.Session()
 SESSION.headers.update(HEADERS)
 
 
