@@ -19,21 +19,39 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install requests
+
       - run: python3 emess_rss.py
+        continue-on-error: true
       - run: python3 emess_rss_527.py
+        continue-on-error: true
       - run: python3 emess_rss_453.py
+        continue-on-error: true
       - run: python3 emess_rss_394.py
+        continue-on-error: true
       - run: python3 emess_rss_455.py
+        continue-on-error: true
       - run: python3 emess_rss_452.py
+        continue-on-error: true
       - run: python3 emess_rss_421.py
+        continue-on-error: true
       - run: python3 emess_rss_447.py
+        continue-on-error: true
       - run: python3 emess_rss_506.py
+        continue-on-error: true
       - run: python3 emess_rss_53359.py
+        continue-on-error: true
       - run: python3 kolbarama_rss_800.py
+        continue-on-error: true
+
       - run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add feed.xml state.json feed_527.xml state_527.json feed_453.xml state_453.json feed_394.xml state_394.json feed_455.xml state_455.json feed_452.xml state_452.json feed_421.xml state_421.json feed_447.xml state_447.json feed_506.xml state_506.json feed_53359.xml state_53359.json feed_kolbarama_800.xml state_kolbarama_800.json
+          FILES="feed.xml state.json feed_527.xml state_527.json feed_453.xml state_453.json feed_394.xml state_394.json feed_455.xml state_455.json feed_452.xml state_452.json feed_421.xml state_421.json feed_447.xml state_447.json feed_506.xml state_506.json feed_53359.xml state_53359.json feed_kolbarama_800.xml state_kolbarama_800.json"
+          for f in $FILES; do
+            if [ -f "$f" ]; then
+              git add "$f"
+            fi
+          done
           git diff --staged --quiet || git commit -m "Update podcast feeds"
           git pull --rebase origin main
           git push
