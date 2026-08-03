@@ -42,11 +42,21 @@ jobs:
         continue-on-error: true
       - run: python3 kolbarama_rss_800.py
         continue-on-error: true
+      - run: python3 kolbarama_rss_hadvechelek.py
+        continue-on-error: true
+      - run: python3 kolbarama_rss_tzeithakochavim.py
+        continue-on-error: true
+      - run: python3 kolbarama_rss_laylamenatzeach.py
+        continue-on-error: true
+      - run: python3 kolbarama_rss_chidudon.py
+        continue-on-error: true
+      - run: python3 kolbarama_rss_hamehadura.py
+        continue-on-error: true
 
       - run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          FILES="feed.xml state.json feed_527.xml state_527.json feed_453.xml state_453.json feed_394.xml state_394.json feed_455.xml state_455.json feed_452.xml state_452.json feed_421.xml state_421.json feed_447.xml state_447.json feed_506.xml state_506.json feed_53359.xml state_53359.json feed_kolbarama_800.xml state_kolbarama_800.json"
+          FILES="feed.xml state.json feed_527.xml state_527.json feed_453.xml state_453.json feed_394.xml state_394.json feed_455.xml state_455.json feed_452.xml state_452.json feed_421.xml state_421.json feed_447.xml state_447.json feed_506.xml state_506.json feed_53359.xml state_53359.json feed_kolbarama_800.xml state_kolbarama_800.json feed_kolbarama_hadvechelek.xml state_kolbarama_hadvechelek.json feed_kolbarama_tzeithakochavim.xml state_kolbarama_tzeithakochavim.json feed_kolbarama_laylamenatzeach.xml state_kolbarama_laylamenatzeach.json feed_kolbarama_chidudon.xml state_kolbarama_chidudon.json feed_kolbarama_hamehadura.xml state_kolbarama_hamehadura.json"
           for f in $FILES; do
             if [ -f "$f" ]; then
               git add "$f"
