@@ -56,11 +56,25 @@ jobs:
         continue-on-error: true
       - run: python3 doscast_rss_121.py
         continue-on-error: true
+      - run: python3 doscast_rss_489.py
+        continue-on-error: true
+      - run: python3 doscast_rss_485.py
+        continue-on-error: true
+      - run: python3 doscast_rss_461.py
+        continue-on-error: true
+      - run: python3 doscast_rss_448.py
+        continue-on-error: true
+      - run: python3 doscast_rss_438.py
+        continue-on-error: true
+      - run: python3 doscast_rss_419.py
+        continue-on-error: true
+      - run: python3 doscast_rss_188.py
+        continue-on-error: true
 
       - run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          FILES="feed.xml state.json feed_527.xml state_527.json feed_453.xml state_453.json feed_394.xml state_394.json feed_455.xml state_455.json feed_452.xml state_452.json feed_421.xml state_421.json feed_447.xml state_447.json feed_506.xml state_506.json feed_53359.xml state_53359.json feed_kolbarama_800.xml state_kolbarama_800.json feed_kolbarama_hadvechelek.xml state_kolbarama_hadvechelek.json feed_kolbarama_tzeithakochavim.xml state_kolbarama_tzeithakochavim.json feed_kolbarama_laylamenatzeach.xml state_kolbarama_laylamenatzeach.json feed_kolbarama_chidudon.xml state_kolbarama_chidudon.json feed_kolbarama_hamehadura.xml state_kolbarama_hamehadura.json feed_doscast_430.xml state_doscast_430.json feed_doscast_121.xml state_doscast_121.json"
+          FILES="feed.xml state.json feed_527.xml state_527.json feed_453.xml state_453.json feed_394.xml state_394.json feed_455.xml state_455.json feed_452.xml state_452.json feed_421.xml state_421.json feed_447.xml state_447.json feed_506.xml state_506.json feed_53359.xml state_53359.json feed_kolbarama_800.xml state_kolbarama_800.json feed_kolbarama_hadvechelek.xml state_kolbarama_hadvechelek.json feed_kolbarama_tzeithakochavim.xml state_kolbarama_tzeithakochavim.json feed_kolbarama_laylamenatzeach.xml state_kolbarama_laylamenatzeach.json feed_kolbarama_chidudon.xml state_kolbarama_chidudon.json feed_kolbarama_hamehadura.xml state_kolbarama_hamehadura.json feed_doscast_430.xml state_doscast_430.json feed_doscast_121.xml state_doscast_121.json feed_doscast_489.xml state_doscast_489.json feed_doscast_485.xml state_doscast_485.json feed_doscast_461.xml state_doscast_461.json feed_doscast_448.xml state_doscast_448.json feed_doscast_438.xml state_doscast_438.json feed_doscast_419.xml state_doscast_419.json feed_doscast_188.xml state_doscast_188.json"
           for f in $FILES; do
             if [ -f "$f" ]; then
               git add "$f"
