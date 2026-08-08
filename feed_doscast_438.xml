@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>מִשְׁנָה למנכ"ל</title>
+    <description>פודקסט של יניב פוגל עוסק בעולמם של מנהלים . בפודקסט נדבר על הנעת עובדים , אתגרים , הצלחות , דילמות , משברים , וכל מה שנמצא בעולמם של מנהלים והחיבור לעולם הספרות היהודי בן 3000 שנה.
+יניב פוגל , כתב שלושה ספרי ניהול : אבות הניהול , תרי"ג מצות הניהול  וישיבת הנהלה.
+חוקר מרצה על מבצעי צה"ל לחילוץ חטופים וחיסול מחבלים .
+יניב סא"ל במילואים ומנהל אדמיניסטרטיבי של בית החולים וולפסון</description>
+    <link>https://www.doscast.co.il/podcast/438</link>
+    <language>he-il</language>
+    <lastBuildDate>Sat, 08 Aug 2026 22:30:48 +0000</lastBuildDate>
+    <itunes:image href="https://media.doscast.co.il//media/Modules/podcasts/451562_tumb_500X500.jpg"/>
+    <item>
+      <title>פרק 3 -  ניהול בדרכי אבות</title>
+      <description>שיחה עם אלוף משנה במילואים ירון מלכא, מפקד הנדסה פיקוד דרום במילואים וסמנכ״ל בטיחות בחברת שבירו .
+הפרק עוסק בפיקוד צבאי וניהול אזרחי. באיך מיישמים הלכה את הניהול ב״ דרכי אבות ״ ועל מצוות ונשמרתם לנפשותיכם.
+הפרק מוקדש לעילוי נשמת משה מלכא ז״ל</description>
+      <link>https://www.doscast.co.il/episode/8682</link>
+      <guid isPermaLink="false">8682</guid>
+      <pubDate>Sun, 08 Dec 2024 14:10:19 +0200</pubDate>
+      <enclosure url="https://media.doscast.co.il//media/Modules/episodes/466042.mp3" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:19:50</itunes:duration>
+    </item>
+    <item>
+      <title>פרק 4 - מהבחירה בחינוך כדרך חיים ועד לניהול תיכון</title>
+      <description>פרק  עם רס״ן במיל. צחי מעתוק מנהל בית ספר תיכון עתיד דביר בבית שמש
+נדבר על מהם הצלחות בחינוך, שילוב של שירות מילואים וניהול בית ספר ואתגרי החינוך בדור הנוכחי.</description>
+      <link>https://www.doscast.co.il/episode/8865</link>
+      <guid isPermaLink="false">8865</guid>
+      <pubDate>Mon, 30 Dec 2024 13:57:42 +0200</pubDate>
+      <enclosure url="https://media.doscast.co.il//media/Modules/episodes/490126.mp3" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:27:40</itunes:duration>
+    </item>
+    <item>
+      <title>פרק 2 - ״כאבות כך הבנים״</title>
+      <description>פודקסט  של זיו אלול ויניב פוגל שני מנהלים : אחד יזם וסטארטפיסט מצליח ואחד מנהל אדמיניסטרטיבי של בית החולים וולפסון על החברות בניהם ועל ״אבות הניהול״ ספר שהפך לרב מכר מצליח בעולם בזכות החיבור של הניהול המודרני לארון הספרים היהודי בן 3000 שנה .
+לעילוי נשמת רס״ן מור יהודה אלרז ז״ל</description>
+      <link>https://www.doscast.co.il/episode/8565</link>
+      <guid isPermaLink="false">8565</guid>
+      <pubDate>Mon, 25 Nov 2024 17:48:17 +0200</pubDate>
+      <enclosure url="https://media.doscast.co.il//media/Modules/episodes/451564.mp3" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:28:25</itunes:duration>
+    </item>
+    <item>
+      <title>פרק 1 - חברותא ניהולית</title>
+      <description>פרק עם  יובל בן מרדכי בו אנחנו משתפים על תהליך מיוחד של ׳חברותא ניהולית׳ בו נפגשנו במשך שנים וליבנו סוגיות ניהוליות שהיו על שולחננו תהליך שהוביל  להוצאת ספר  ״תרי״ג מצוות הניהול״ שהופץ באלפי עותקים והפך לשפה בחברות וארגונים רבים.</description>
+      <link>https://www.doscast.co.il/episode/8564</link>
+      <guid isPermaLink="false">8564</guid>
+      <pubDate>Mon, 25 Nov 2024 17:22:59 +0200</pubDate>
+      <enclosure url="https://media.doscast.co.il//media/Modules/episodes/451563.mp3" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:33:36</itunes:duration>
+    </item>
+  </channel>
+</rss>
