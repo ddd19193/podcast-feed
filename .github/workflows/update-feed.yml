@@ -97,5 +97,6 @@ jobs:
             fi
           done
           git diff --staged --quiet || git commit -m "Update podcast feeds"
-          git pull --rebase origin main
+          git fetch origin main
+          git merge -X ours origin/main --no-edit
           git push
