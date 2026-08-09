@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ברשות - מדברים הלכה והשקפה</title>
+    <description>ברשות - מדברים הלכה והשקפה - קול הלשון</description>
+    <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
+    <language>he-il</language>
+    <lastBuildDate>Sun, 09 Aug 2026 04:43:58 +0000</lastBuildDate>
+    <item>
+      <title>מהם האתגרים איתם מתמודדים תלמידי הישיבות כיום?</title>
+      <description>ברשות - מדברים הלכה והשקפה</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
+      <guid isPermaLink="false">42605288</guid>
+      <pubDate>Tue, 14 Jul 2026 13:03:20 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42605288" length="0" type="audio/mpeg"/>
+      <itunes:duration>01:51:04</itunes:duration>
+    </item>
+    <item>
+      <title>בירור שידוך: כמה ומה צריך לברר לפני שניגשים לשידוך? הרב יהושע אייכנשטיין והרב שרגא שטיינמן</title>
+      <description>ברשות - מדברים הלכה והשקפה</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
+      <guid isPermaLink="false">42605287</guid>
+      <pubDate>Tue, 14 Jul 2026 12:03:20 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42605287" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:56:23</itunes:duration>
+    </item>
+    <item>
+      <title>כשהתפוח נופל ״קצת״ רחוק מהעץ - כאשר ילדים מחמירים יותר או פחות מההורים</title>
+      <description>ברשות - מדברים הלכה והשקפה</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
+      <guid isPermaLink="false">42666354</guid>
+      <pubDate>Sun, 26 Jul 2026 15:58:45 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42666354" length="0" type="audio/mpeg"/>
+      <itunes:duration>01:22:47</itunes:duration>
+    </item>
+    <item>
+      <title>שלום בית: כמה הבעל צריך לעזור בבית? האם יש לזה שיעור או אין לזה שיעור?</title>
+      <description>ברשות - מדברים הלכה והשקפה</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
+      <guid isPermaLink="false">42671934</guid>
+      <pubDate>Mon, 03 Aug 2026 21:00:12 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42671934" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:59:22</itunes:duration>
+    </item>
+  </channel>
+</rss>
