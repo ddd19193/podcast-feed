@@ -1,103 +1,336 @@
 #!/usr/bin/env python3
 """
-amistory_rss.py — משקף (מראה, mirror) את ה-RSS המקורי של פודקאסט
-"סיפורי אמיתי המספר" (amistory.co.il).
+halomot_rss_67.py — בונה ומעדכן פיד RSS מקטגוריית "תוכן חופשי" (category
+ID 67) באתר halomothasidiim.co.il.
 
-הרעיון: לפודקאסט הזה כבר יש RSS אמיתי ומלא שהיוצר שולח ל-Apple Podcasts
-ו-Spotify (זו הדרך היחידה שבה תוכן מגיע לפלטפורמות האלה). ה-RSS הזה
-"מוסתר" מהמשתמש הרגיל באפליקציות, אבל ה-API הפומבי של Apple (iTunes
-Lookup API) חושף אותו לכל אחד תחת השדה "feedUrl".
+מבנה שאומת מול תעבורת רשת אמיתית מהאתר:
 
-לכן, במקום לבנות scraper מורכב לאתר amistory.co.il עצמו (שיש בו מאות
-סיפורים מפוזרים בעשרות קטגוריות בלי API ברור) - הסקריפט הזה:
-  1. שולף את כתובת ה-RSS האמיתית דרך Apple: https://itunes.apple.com/lookup?id=<APPLE_PODCAST_ID>
-  2. מוריד את ה-RSS המקורי מהכתובת הזו
-  3. שומר אותו כמו שהוא בקובץ הפלט שלנו (זהו "mirror" - שיקוף מלא)
+  1. דף הקטגוריה מכיל את הפרקים הראשונים ישירות ב-HTML, וגם מגדיר:
+         LOAD_MORE_AJAX = {"url": "https://halomothasidiim.co.il/wp-admin/admin-ajax.php",
+                            "nonce": "<טוקן שמשתנה בכל טעינת דף>"}
 
-זה גם מבטיח שנקבל את **כל** הפרקים (לא רק את אלה שמוצגים בעמוד my-stories),
-כי ה-RSS המקורי הוא המקור האמיתי שממנו מוזן כל תוכן הפודקאסט.
+  2. עמודים נוספים נשלפים דרך:
+     POST https://halomothasidiim.co.il/wp-admin/admin-ajax.php
+     action=load_more_posts
+     paged=<מספר עמוד, מתחיל מ-2>
+     nonce=<הטוקן שחולץ מהדף>
+     item_type=audio
+     category=67
+
+  3. כל פרק הוא בלוק <article id="audio-<ID>" class="grid-item audio-item">
+     עם: קישור לעמוד הפרק, כותרת, ותכונת data-audio עם כתובת ה"נגן"
+     (page שמפנה בסופו של דבר לקובץ mp3 האמיתי - podcast apps עוקבים
+     אחרי הפניות HTTP אוטומטית).
+
+  4. חשוב לבטיחות: כל פריט נבדק אם הוא "נעול" (lock-cover /
+     password-access-cover עם style שאינו "display: none") - פריטים
+     נעולים מדולגים ולא נכללים בפיד, כדי לא לפרסם תוכן מוגן בטעות.
 
 הרצה:
     pip install requests
-    python3 amistory_rss.py
+    python3 halomot_rss_67.py
 """
+
+import json
+import os
+import re
+import html
+from datetime import datetime, timezone, timedelta
+from urllib.parse import quote
+from xml.sax.saxutils import escape
 
 import requests
 
 # ============================== הגדרות ==============================
 
-APPLE_PODCAST_ID = "1329424446"   # מזהה הפודקאסט באפל פודקאסטס
-LOOKUP_URL = f"https://itunes.apple.com/lookup?id={APPLE_PODCAST_ID}"
+BASE_URL = "https://halomothasidiim.co.il"
+CATEGORY_SLUG = "%d7%aa%d7%95%d7%9b%d7%9f-%d7%97%d7%95%d7%a4%d7%a9%d7%99"  # תוכן-חופשי
+CATEGORY_ID = 67
+ITEM_TYPE = "audio"
 
-OUTPUT_XML = "feed_amistory.xml"
+CATEGORY_PAGE_URL = f"{BASE_URL}/category/{CATEGORY_SLUG}/"
+AJAX_URL = f"{BASE_URL}/wp-admin/admin-ajax.php"
+MAX_PAGES = 100
+
+OUTPUT_XML = "feed_halomot_67.xml"
+STATE_FILE = "state_halomot_67.json"
 REQUEST_TIMEOUT = 20
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                   "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Referer": CATEGORY_PAGE_URL,
 }
+
+SESSION = requests.Session()
+SESSION.headers.update(HEADERS)
 
 # ======================================================================
 
 
-def get_feed_url():
-    """שולף את כתובת ה-RSS האמיתית דרך iTunes Lookup API."""
+def clean_text(raw):
+    if not raw:
+        return ""
+    text = html.unescape(raw)
+    text = re.sub(r"<[^>]+>", "", text)
+    return text.strip()
+
+
+def fetch_category_page():
     try:
-        resp = requests.get(LOOKUP_URL, headers=HEADERS, timeout=REQUEST_TIMEOUT)
+        resp = SESSION.get(CATEGORY_PAGE_URL, timeout=REQUEST_TIMEOUT)
         if resp.status_code != 200:
-            print(f"  [!] {LOOKUP_URL} -> HTTP {resp.status_code}")
+            print(f"  [!] {CATEGORY_PAGE_URL} -> HTTP {resp.status_code}")
             return None
-        data = resp.json()
-    except (requests.RequestException, ValueError) as e:
-        print(f"  [!] שגיאה: {e}")
-        return None
-
-    results = data.get("results", [])
-    if not results:
-        print("  [!] לא נמצאו תוצאות עבור המזהה הזה ב-Apple Podcasts")
-        return None
-
-    feed_url = results[0].get("feedUrl")
-    if not feed_url:
-        print("  [!] לא נמצא feedUrl בתוצאה")
-        return None
-
-    print(f"      נמצא RSS מקורי: {feed_url}")
-    return feed_url
-
-
-def mirror_feed(feed_url):
-    """מוריד את ה-RSS המקורי ושומר אותו כפי שהוא."""
-    try:
-        resp = requests.get(feed_url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-        if resp.status_code != 200:
-            print(f"  [!] {feed_url} -> HTTP {resp.status_code}")
-            return False
+        return resp.text
     except requests.RequestException as e:
-        print(f"  [!] שגיאה בהורדת ה-RSS: {e}")
-        return False
+        print(f"  [!] שגיאת רשת: {e}")
+        return None
 
-    with open(OUTPUT_XML, "wb") as f:
-        f.write(resp.content)
 
-    num_items = resp.text.count("<item>") or resp.text.count("<item ")
-    print(f"      נשמר {OUTPUT_XML} ({num_items} פרקים בערך)")
-    return True
+def extract_nonce(page_html):
+    """מחלץ את ה-nonce מתוך LOAD_MORE_AJAX = {"url": "...", "nonce": "..."} בדף."""
+    match = re.search(r'LOAD_MORE_AJAX\s*=\s*\{[^}]*"nonce"\s*:\s*"([^"]+)"', page_html)
+    if match:
+        return match.group(1)
+    return None
+
+
+def fetch_more_pages(nonce):
+    """שולף את כל עמודי הארכיון הנוספים דרך AJAX 'הצג עוד'."""
+    all_extra_html = []
+    page = 2
+    while page <= MAX_PAGES:
+        try:
+            resp = SESSION.post(
+                AJAX_URL,
+                data={
+                    "action": "load_more_posts",
+                    "paged": page,
+                    "nonce": nonce,
+                    "item_type": ITEM_TYPE,
+                    "category": CATEGORY_ID,
+                },
+                timeout=REQUEST_TIMEOUT,
+            )
+            if resp.status_code != 200:
+                print(f"  [!] עמוד {page} -> HTTP {resp.status_code}")
+                break
+            page_html = resp.text
+        except requests.RequestException as e:
+            print(f"  [!] שגיאה בעמוד {page}: {e}")
+            break
+
+        if not page_html or not page_html.strip():
+            print(f"  [.] עמוד {page} ריק - מסיים")
+            break
+
+        # אם התגובה JSON עטוף (במקום HTML ישיר), ננסה לחלץ ממנה
+        stripped = page_html.strip()
+        if stripped.startswith("{") or stripped.startswith("["):
+            try:
+                data = json.loads(stripped)
+                if isinstance(data, dict):
+                    page_html = data.get("html") or data.get("data") or ""
+                elif isinstance(data, list):
+                    page_html = ""
+            except ValueError:
+                pass
+
+        if not page_html or "audio-item" not in page_html:
+            print(f"  [.] עמוד {page} לא הכיל פריטים נוספים - מסיים")
+            break
+
+        all_extra_html.append(page_html)
+        print(f"  [.] עמוד {page} נטען בהצלחה")
+        page += 1
+
+    return "\n".join(all_extra_html)
+
+
+def resolve_audio_url(page_url):
+    """
+    ה-data-audio באתר מצביע על כתובת 'עמוד' (/sidra/.../) שמפנה (redirect)
+    בפועל לקובץ ה-mp3 האמיתי (למשל wp-content/uploads/.../title.mp3).
+    Podcast apps רבים לא מסתדרים עם streaming ישיר דרך כתובת הביניים,
+    לכן פותרים כאן את הכתובת הסופית מראש ושומרים אותה בפיד.
+    """
+    try:
+        resp = SESSION.head(page_url, allow_redirects=True, timeout=REQUEST_TIMEOUT)
+        final_url = resp.url
+        content_type = resp.headers.get("Content-Type", "")
+        if "audio" in content_type or final_url.lower().endswith((".mp3", ".m4a", ".wav")):
+            return final_url
+    except requests.RequestException:
+        pass
+
+    # גיבוי: אם HEAD לא עבד או לא החזיר תוצאה ברורה, ננסה GET עם stream
+    # (וסוגרים מיד בלי להוריד את כל הקובץ)
+    try:
+        resp = SESSION.get(page_url, allow_redirects=True, timeout=REQUEST_TIMEOUT, stream=True)
+        final_url = resp.url
+        resp.close()
+        return final_url
+    except requests.RequestException as e:
+        print(f"    [!] נכשל לפתור כתובת עבור {page_url}: {e}")
+        return page_url  # גיבוי אחרון - הכתובת המקורית, גם אם לא תעבוד מושלם
+
+
+def parse_episodes(page_html):
+    """מפצל את ה-HTML לפי כל בלוק article.audio-item ומחלץ את הפרטים."""
+    episodes = []
+    blocks = re.split(r'<article id="audio-', page_html)
+    for block in blocks[1:]:
+        id_match = re.match(r'(\d+)"', block)
+        if not id_match:
+            continue
+        episode_id = id_match.group(1)
+
+        # בדיקת נעילה - מדלגים על כל פריט שלא מסומן בפירוש כ"display: none"
+        lock_match = re.search(r'class="lock-cover"\s+style="display:\s*([a-zA-Z]+)"', block)
+        password_match = re.search(r'class="password-access-cover"\s+style="display:\s*([a-zA-Z]+)"', block)
+        if lock_match and lock_match.group(1).lower() != "none":
+            continue
+        if password_match and password_match.group(1).lower() != "none":
+            continue
+
+        link_match = re.search(r'<a class="series-post-link" href="([^"]+)"', block)
+        title_match = re.search(
+            r'<div class="series-post-title audio-post-title">([^<]*)</div>', block
+        )
+        audio_match = re.search(r'data-audio="([^"]+)"', block)
+        image_match = re.search(r'background-image:\s*url\(([^)]+)\)', block)
+
+        if not (link_match and title_match and audio_match):
+            continue
+
+        episodes.append({
+            "id": episode_id,
+            "link": html.unescape(link_match.group(1)),
+            "title": clean_text(title_match.group(1)),
+            "audio_url": html.unescape(audio_match.group(1)),
+            "image": html.unescape(image_match.group(1)) if image_match else "",
+        })
+    return episodes
+
+
+def normalize_episode(ep):
+    return {
+        "title": ep["title"] or "(ללא כותרת)",
+        "description": ep["title"],
+        "link": quote(ep["link"], safe=":/?=&%"),
+        "guid": ep["id"],
+        "pub_date": None,  # אין תאריך פרסום מפורש בכרטיס - נמלא סדר יורד לפי סדר הופעה
+        "audio_url": quote(ep["audio_url"], safe=":/?=&%"),
+        "image": quote(ep["image"], safe=":/%") if ep["image"] else "",
+    }
+
+
+def build_episode_xml(ep, pub_date):
+    img_tag = f'<itunes:image href="{escape(ep["image"])}"/>\n      ' if ep["image"] else ""
+    return f"""    <item>
+      <title>{escape(ep['title'])}</title>
+      <description>{escape(ep['description'])}</description>
+      <link>{escape(ep['link'])}</link>
+      <guid isPermaLink="false">{escape(ep['guid'])}</guid>
+      <pubDate>{pub_date}</pubDate>
+      <enclosure url="{escape(ep['audio_url'])}" length="0" type="audio/mpeg"/>
+      {img_tag}</item>"""
+
+
+def build_feed(episodes):
+    # אין תאריכים אמיתיים לפרקים בכרטיסים - משתמשים בסדר ההופעה (מהחדש
+    # לישן, כפי שהאתר עצמו מציג) ומייצרים תאריכים יורדים מלאכותיים כדי
+    # ששמירת הסדר בפיד תישמר נכון באפליקציות פודקאסטים.
+    now = datetime.now(timezone.utc)
+    items_xml_parts = []
+    for i, ep in enumerate(episodes):
+        fake_date = now - timedelta(minutes=i)
+        pub_date = fake_date.strftime("%a, %d %b %Y %H:%M:%S %z")
+        items_xml_parts.append(build_episode_xml(ep, pub_date))
+    items_xml = "\n".join(items_xml_parts)
+
+    now_str = now.strftime("%a, %d %b %Y %H:%M:%S %z")
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>חלומות של צדיקים - תוכן חופשי</title>
+    <description>תוכן חופשי - חלומות של צדיקים</description>
+    <link>{escape(CATEGORY_PAGE_URL)}</link>
+    <language>he-il</language>
+    <lastBuildDate>{now_str}</lastBuildDate>
+{items_xml}
+  </channel>
+</rss>
+"""
+
+
+def load_state():
+    if os.path.exists(STATE_FILE):
+        with open(STATE_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    return {"known_guids": []}
+
+
+def save_state(state):
+    with open(STATE_FILE, "w", encoding="utf-8") as f:
+        json.dump(state, f, ensure_ascii=False, indent=2)
 
 
 def main():
-    print("[1/2] שולף את כתובת ה-RSS האמיתית מ-Apple...")
-    feed_url = get_feed_url()
-    if not feed_url:
-        print("      נכשל - לא ניתן היה למצוא את כתובת ה-RSS")
+    print(f"[1/5] מוריד את דף הקטגוריה: {CATEGORY_PAGE_URL}")
+    page_html = fetch_category_page()
+    if not page_html:
+        print("      נכשל - לא ניתן היה להוריד את הדף")
         return
 
-    print("[2/2] מוריד ושומר את ה-RSS...")
-    success = mirror_feed(feed_url)
-    if success:
-        print(f"\nהושלם: {OUTPUT_XML} עודכן בהצלחה.")
+    print("[2/5] מחלץ nonce לצורך בקשות 'הצג עוד'...")
+    nonce = extract_nonce(page_html)
+    if not nonce:
+        print("      [!] לא נמצא nonce - ימשיך רק עם העמוד הראשון (בלי עימוד)")
+        extra_html = ""
     else:
-        print("\nנכשל בשלב האחרון.")
+        print(f"      נמצא nonce: {nonce}")
+        print("[3/5] מוריד עמודי ארכיון נוספים...")
+        extra_html = fetch_more_pages(nonce)
+
+    combined_html = page_html + "\n" + extra_html
+    raw_episodes = parse_episodes(combined_html)
+
+    seen_ids = set()
+    unique_raw = []
+    for ep in raw_episodes:
+        if ep["id"] in seen_ids:
+            continue
+        seen_ids.add(ep["id"])
+        unique_raw.append(ep)
+
+    print(f"[4/5] נמצאו {len(unique_raw)} פרקים פתוחים (לא נעולים) - פותר כתובות mp3 אמיתיות...")
+    for i, ep in enumerate(unique_raw, 1):
+        ep["audio_url"] = resolve_audio_url(ep["audio_url"])
+        if i % 20 == 0:
+            print(f"      נפתרו {i}/{len(unique_raw)} כתובות...")
+
+    episodes = [normalize_episode(ep) for ep in unique_raw]
+
+    state = load_state()
+    known = set(state.get("known_guids", []))
+    new_guids = [ep["guid"] for ep in episodes if ep["guid"] not in known]
+    print(f"      {len(new_guids)} פרקים חדשים מאז הריצה האחרונה")
+
+    print("[5/5] בונה ושומר את קובץ ה-RSS...")
+    feed_xml = build_feed(episodes)
+    with open(OUTPUT_XML, "w", encoding="utf-8") as f:
+        f.write(feed_xml)
+
+    state["known_guids"] = [ep["guid"] for ep in episodes]
+    state["last_run"] = datetime.now(timezone.utc).isoformat()
+    save_state(state)
+
+    print(f"\nהושלם: {OUTPUT_XML} מכיל {len(episodes)} פרקים.")
 
 
 if __name__ == "__main__":
