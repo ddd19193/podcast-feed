@@ -149,6 +149,29 @@ def fetch_more_pages(nonce):
     return "\n".join(all_extra_html)
 
 
+def resolve_audio_url(episode_id):
+    """
+    התגלית המרכזית: מזהה הפרק (מתוך id="audio-<ID>") הוא בעצם ה-ID
+    של קובץ המדיה (attachment) בוורדפרס. אפשר לשלוף את כתובת ה-mp3
+    הנקייה ישירות דרך ה-REST API הרגיל של וורדפרס:
+
+        GET https://halomothasidiim.co.il/wp-json/wp/v2/media/<ID>
+
+    התגובה כוללת שדה "source_url" עם הכתובת הישירה והנקייה של הקובץ.
+    """
+    api_url = f"{BASE_URL}/wp-json/wp/v2/media/{episode_id}"
+    try:
+        resp = SESSION.get(api_url, timeout=REQUEST_TIMEOUT)
+        if resp.status_code != 200:
+            print(f"    [!] {api_url} -> HTTP {resp.status_code}")
+            return None
+        data = resp.json()
+        return data.get("source_url")
+    except (requests.RequestException, ValueError) as e:
+        print(f"    [!] נכשל לפתור מדיה עבור ID {episode_id}: {e}")
+        return None
+
+
 def parse_episodes(page_html):
     """מפצל את ה-HTML לפי כל בלוק article.audio-item ומחלץ את הפרטים."""
     episodes = []
@@ -253,20 +276,20 @@ def save_state(state):
 
 
 def main():
-    print(f"[1/4] מוריד את דף הקטגוריה: {CATEGORY_PAGE_URL}")
+    print(f"[1/5] מוריד את דף הקטגוריה: {CATEGORY_PAGE_URL}")
     page_html = fetch_category_page()
     if not page_html:
         print("      נכשל - לא ניתן היה להוריד את הדף")
         return
 
-    print("[2/4] מחלץ nonce לצורך בקשות 'הצג עוד'...")
+    print("[2/5] מחלץ nonce לצורך בקשות 'הצג עוד'...")
     nonce = extract_nonce(page_html)
     if not nonce:
         print("      [!] לא נמצא nonce - ימשיך רק עם העמוד הראשון (בלי עימוד)")
         extra_html = ""
     else:
         print(f"      נמצא nonce: {nonce}")
-        print("[3/4] מוריד עמודי ארכיון נוספים...")
+        print("[3/5] מוריד עמודי ארכיון נוספים...")
         extra_html = fetch_more_pages(nonce)
 
     combined_html = page_html + "\n" + extra_html
@@ -280,15 +303,25 @@ def main():
         seen_ids.add(ep["id"])
         unique_raw.append(ep)
 
-    episodes = [normalize_episode(ep) for ep in unique_raw]
-    print(f"      נמצאו {len(episodes)} פרקים פתוחים (לא נעולים) בסה\"כ")
+    print(f"[4/5] נמצאו {len(unique_raw)} פרקים פתוחים (לא נעולים) - פותר כתובות mp3 דרך WP media API...")
+    resolved = []
+    for i, ep in enumerate(unique_raw, 1):
+        real_url = resolve_audio_url(ep["id"])
+        if real_url:
+            ep["audio_url"] = real_url
+            resolved.append(ep)
+        if i % 20 == 0:
+            print(f"      נפתרו {i}/{len(unique_raw)} כתובות...")
+    print(f"      {len(resolved)}/{len(unique_raw)} פרקים נפתרו בהצלחה")
+
+    episodes = [normalize_episode(ep) for ep in resolved]
 
     state = load_state()
     known = set(state.get("known_guids", []))
     new_guids = [ep["guid"] for ep in episodes if ep["guid"] not in known]
     print(f"      {len(new_guids)} פרקים חדשים מאז הריצה האחרונה")
 
-    print("[4/4] בונה ושומר את קובץ ה-RSS...")
+    print("[5/5] בונה ושומר את קובץ ה-RSS...")
     feed_xml = build_feed(episodes)
     with open(OUTPUT_XML, "w", encoding="utf-8") as f:
         f.write(feed_xml)
