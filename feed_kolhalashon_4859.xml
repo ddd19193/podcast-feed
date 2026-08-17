@@ -7,7 +7,7 @@
     <description>ברשות - מדברים הלכה והשקפה - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Mon, 17 Aug 2026 15:02:11 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 15:59:59 +0000</lastBuildDate>
     <item>
       <title>הצצה לעולמו הפנימי של בן ישיבה – אתגרים ומורכבויות</title>
       <description>ברשות - מדברים הלכה והשקפה</description>
@@ -43,6 +43,15 @@
       <pubDate>Sun, 26 Jul 2026 15:58:45 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42666354" length="0" type="audio/mpeg"/>
       <itunes:duration>01:22:47</itunes:duration>
+    </item>
+    <item>
+      <title>שידוכים –  מה צריך לגלות במהלך פגישות וכדומה?</title>
+      <description>ברשות - מדברים הלכה והשקפה</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
+      <guid isPermaLink="false">42684276</guid>
+      <pubDate>Mon, 17 Aug 2026 17:51:36 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42684276" length="0" type="audio/mpeg"/>
+      <itunes:duration>01:18:56</itunes:duration>
     </item>
     <item>
       <title>שלום בית: כמה הבעל צריך לעזור בבית? האם יש לזה שיעור או אין לזה שיעור?</title>
