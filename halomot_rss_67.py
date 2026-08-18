@@ -153,23 +153,26 @@ def resolve_audio_url(episode_id):
     """
     התגלית המרכזית: מזהה הפרק (מתוך id="audio-<ID>") הוא בעצם ה-ID
     של קובץ המדיה (attachment) בוורדפרס. אפשר לשלוף את כתובת ה-mp3
-    הנקייה ישירות דרך ה-REST API הרגיל של וורדפרס:
+    הנקייה, ואת גודל הקובץ (חשוב! אפליקציות פודקאסטים רבות דוחות
+    enclosure עם length="0"), ישירות דרך ה-REST API הרגיל של וורדפרס:
 
         GET https://halomothasidiim.co.il/wp-json/wp/v2/media/<ID>
 
-    התגובה כוללת שדה "source_url" עם הכתובת הישירה והנקייה של הקובץ.
+    מחזיר: (source_url, filesize) או (None, None) בכשל.
     """
     api_url = f"{BASE_URL}/wp-json/wp/v2/media/{episode_id}"
     try:
         resp = SESSION.get(api_url, timeout=REQUEST_TIMEOUT)
         if resp.status_code != 200:
             print(f"    [!] {api_url} -> HTTP {resp.status_code}")
-            return None
+            return None, None
         data = resp.json()
-        return data.get("source_url")
+        source_url = data.get("source_url")
+        filesize = data.get("filesize") or data.get("media_details", {}).get("filesize") or 0
+        return source_url, filesize
     except (requests.RequestException, ValueError) as e:
         print(f"    [!] נכשל לפתור מדיה עבור ID {episode_id}: {e}")
-        return None
+        return None, None
 
 
 def parse_episodes(page_html):
@@ -219,6 +222,7 @@ def normalize_episode(ep):
         "pub_date": None,  # אין תאריך פרסום מפורש בכרטיס - נמלא סדר יורד לפי סדר הופעה
         "audio_url": quote(ep["audio_url"], safe=":/?=&%"),
         "image": quote(ep["image"], safe=":/%") if ep["image"] else "",
+        "filesize": ep.get("filesize", 0),
     }
 
 
@@ -230,7 +234,7 @@ def build_episode_xml(ep, pub_date):
       <link>{escape(ep['link'])}</link>
       <guid isPermaLink="false">{escape(ep['guid'])}</guid>
       <pubDate>{pub_date}</pubDate>
-      <enclosure url="{escape(ep['audio_url'])}" length="0" type="audio/mpeg"/>
+      <enclosure url="{escape(ep['audio_url'])}" length="{ep['filesize']}" type="audio/mpeg"/>
       {img_tag}</item>"""
 
 
@@ -306,9 +310,10 @@ def main():
     print(f"[4/5] נמצאו {len(unique_raw)} פרקים פתוחים (לא נעולים) - פותר כתובות mp3 דרך WP media API...")
     resolved = []
     for i, ep in enumerate(unique_raw, 1):
-        real_url = resolve_audio_url(ep["id"])
+        real_url, filesize = resolve_audio_url(ep["id"])
         if real_url:
             ep["audio_url"] = real_url
+            ep["filesize"] = filesize or 0
             resolved.append(ep)
         if i % 20 == 0:
             print(f"      נפתרו {i}/{len(unique_raw)} כתובות...")
