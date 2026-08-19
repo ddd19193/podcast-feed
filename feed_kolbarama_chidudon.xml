@@ -7,7 +7,7 @@
     <description>חידודון - רדיו קול ברמה</description>
     <link>https://kol-barama.co.il/show/%d7%97%d7%99%d7%93%d7%95%d7%93%d7%95%d7%9f/</link>
     <language>he-il</language>
-    <lastBuildDate>Wed, 19 Aug 2026 02:00:23 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 03:08:44 +0000</lastBuildDate>
     <item>
       <title>חידודון - 18.8.2026 (ה' אלול התשפ"ו)</title>
       <description>חידודון - 18.8.2026 (ה' אלול התשפ"ו)</description>
@@ -2053,6 +2053,14 @@
       <description>חידודון - 27.5.2025 (כ"ט אייר התשפ"ה)</description>
       <link>https://kol-barama.co.il/full_show/27-05-25-%d7%97%d7%99%d7%93%d7%95%d7%93%d7%95%d7%9f/</link>
       <guid isPermaLink="false">233425</guid>
+      <pubDate>Tue, 27 May 2025 00:00:00 +0300</pubDate>
+      <enclosure url="https://kolba-vod.streamgates.net/kol_barama/PRO/27.05.25%20-%20%D7%97%D7%99%D7%93%D7%95%D7%93%D7%95%D7%9F.mp3" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>חידודון - 27.5.2025 (כ"ט אייר התשפ"ה)</title>
+      <description>חידודון - 27.5.2025 (כ"ט אייר התשפ"ה)</description>
+      <link>https://kol-barama.co.il/full_show/27-05-25-%d7%97%d7%99%d7%93%d7%95%d7%93%d7%95%d7%9f-2/</link>
+      <guid isPermaLink="false">276780</guid>
       <pubDate>Tue, 27 May 2025 00:00:00 +0300</pubDate>
       <enclosure url="https://kolba-vod.streamgates.net/kol_barama/PRO/27.05.25%20-%20%D7%97%D7%99%D7%93%D7%95%D7%93%D7%95%D7%9F.mp3" length="0" type="audio/mpeg"/>
     </item>
