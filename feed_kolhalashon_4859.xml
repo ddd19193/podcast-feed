@@ -7,7 +7,7 @@
     <description>ברשות - מדברים הלכה והשקפה - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Mon, 24 Aug 2026 12:03:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 13:10:23 +0000</lastBuildDate>
     <item>
       <title>הצצה לעולמו הפנימי של בן ישיבה – אתגרים ומורכבויות</title>
       <description>ברשות - מדברים הלכה והשקפה</description>
@@ -43,6 +43,15 @@
       <pubDate>Sun, 26 Jul 2026 15:58:45 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42666354" length="0" type="audio/mpeg"/>
       <itunes:duration>01:22:47</itunes:duration>
+    </item>
+    <item>
+      <title>סגולות לקראת השנה החדשה</title>
+      <description>ברשות - מדברים הלכה והשקפה</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
+      <guid isPermaLink="false">42691271</guid>
+      <pubDate>Mon, 24 Aug 2026 20:00:43 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42691271" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:58:04</itunes:duration>
     </item>
     <item>
       <title>שידוכים –  מה צריך לגלות במהלך פגישות וכדומה?</title>
