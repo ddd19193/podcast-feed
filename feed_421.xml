@@ -7,7 +7,7 @@
     <description>תוכנית האקטואליה המרכזית של הבוקר ב"קול חי", בה מתראיינים אישי ציבור ופוליטיקאים, אנשי כלכלה ופרשנים, בכל ענייני היום במגזר הכללי והחרדי כאחד.</description>
     <link>https://www.emess.co.il/audio/program/421</link>
     <language>he-il</language>
-    <lastBuildDate>Tue, 01 Sep 2026 01:19:53 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2026 07:49:00 +0000</lastBuildDate>
     <itunes:image href="https://www.emess.co.il/wp-content/uploads/2024/05/דוד-חכם-בצלאל-קאהן.png"/>
     <item>
       <title>מהדורת הבוקר  – 31.07.24</title>
@@ -1769,6 +1769,15 @@
       <guid isPermaLink="false">1790083</guid>
       <pubDate>Tue, 02 Dec 2025 09:42:08 +0200</pubDate>
       <enclosure url="https://www.emess.co.il/wp-content/uploads/2025/12/2025-12-02-08-00-01.mp3" length="0" type="audio/mpeg"/>
+      <itunes:image href="https://www.emess.co.il/wp-content/uploads/2024/05/דוד-חכם-בצלאל-קאהן.png"/>
+      </item>
+    <item>
+      <title>מהדורת הבוקר – י"ט אלול תשפ"ו – 01.09.26</title>
+      <description>מהדורת הבוקר – י"ט אלול תשפ"ו – 01.09.26</description>
+      <link>https://www.emess.co.il/radio/broadcast/%d7%9e%d7%94%d7%93%d7%95%d7%a8%d7%aa-%d7%94%d7%91%d7%95%d7%a7%d7%a8-%d7%99%d7%98-%d7%90%d7%9c%d7%95%d7%9c-%d7%aa%d7%a9%d7%a4%d7%95-01-09-26</link>
+      <guid isPermaLink="false">1923653</guid>
+      <pubDate>Tue, 01 Sep 2026 09:02:41 +0300</pubDate>
+      <enclosure url="https://www.emess.co.il/wp-content/uploads/2026/09/2026-09-01-08-00-01-0902-26bb1bff.mp3" length="0" type="audio/mpeg"/>
       <itunes:image href="https://www.emess.co.il/wp-content/uploads/2024/05/דוד-חכם-בצלאל-קאהן.png"/>
       </item>
     <item>
