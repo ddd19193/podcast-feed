@@ -7,7 +7,7 @@
     <description>הרב גלעד שם-טוב - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Thu, 03 Sep 2026 09:27:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 14:04:28 +0000</lastBuildDate>
     <item>
       <title>חיי שרה</title>
       <description>שיעורים ושיחות בפרשת השבוע ומועדים</description>
@@ -9736,6 +9736,15 @@
       <pubDate>Thu, 04 Dec 2014 14:42:13 +0200</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/867289" length="0" type="audio/mpeg"/>
       <itunes:duration>00:15:30</itunes:duration>
+    </item>
+    <item>
+      <title>מסר לפרשת נצבים - הנסתרות להשם אלוקינו</title>
+      <description>ווארטים קצרים בפרשת השבוע</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">42703963</guid>
+      <pubDate>Thu, 03 Sep 2026 15:24:17 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42703963" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:06:49</itunes:duration>
     </item>
     <item>
       <title>הלכות חג סוכות, ספר שולחן ערוך אורח חיים, ספר משניות</title>
