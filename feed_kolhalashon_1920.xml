@@ -7,7 +7,7 @@
     <description>הרב גלעד שם-טוב - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Tue, 08 Sep 2026 07:47:28 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2026 13:24:47 +0000</lastBuildDate>
     <item>
       <title>חיי שרה</title>
       <description>שיעורים ושיחות בפרשת השבוע ומועדים</description>
@@ -1602,15 +1602,6 @@
       <itunes:duration>00:01:38</itunes:duration>
     </item>
     <item>
-      <title>שיעור ה</title>
-      <description>חיזוקים קצרים</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">35300249</guid>
-      <pubDate>Wed, 17 May 2023 14:17:20 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/35300249" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:01:44</itunes:duration>
-    </item>
-    <item>
       <title>שיעור ו</title>
       <description>חיזוקים קצרים</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
@@ -1618,6 +1609,15 @@
       <pubDate>Wed, 17 May 2023 14:17:20 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/35300250" length="0" type="audio/mpeg"/>
       <itunes:duration>00:01:58</itunes:duration>
+    </item>
+    <item>
+      <title>שיעור ה</title>
+      <description>חיזוקים קצרים</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">35300249</guid>
+      <pubDate>Wed, 17 May 2023 14:17:20 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/35300249" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:01:44</itunes:duration>
     </item>
     <item>
       <title>שיעור ז</title>
@@ -3996,15 +3996,6 @@
       <itunes:duration>00:01:19</itunes:duration>
     </item>
     <item>
-      <title>מסר קצר לחודש אלול-ו</title>
-      <description>שיעורים ושיחות בפרשת השבוע ומועדים</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">33540478</guid>
-      <pubDate>Tue, 30 Aug 2022 17:25:24 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/33540478" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:02:04</itunes:duration>
-    </item>
-    <item>
       <title>מסר קצר לחודש אלול-ז</title>
       <description>שיעורים ושיחות בפרשת השבוע ומועדים</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
@@ -4014,6 +4005,15 @@
       <itunes:duration>00:01:29</itunes:duration>
     </item>
     <item>
+      <title>מסר קצר לחודש אלול-ו</title>
+      <description>שיעורים ושיחות בפרשת השבוע ומועדים</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">33540478</guid>
+      <pubDate>Tue, 30 Aug 2022 17:25:24 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/33540478" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:02:04</itunes:duration>
+    </item>
+    <item>
       <title>מסר קצר לחודש אלול-ה</title>
       <description>שיעורים ושיחות בפרשת השבוע ומועדים</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
@@ -4021,15 +4021,6 @@
       <pubDate>Tue, 30 Aug 2022 17:25:24 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/33540482" length="0" type="audio/mpeg"/>
       <itunes:duration>00:01:55</itunes:duration>
-    </item>
-    <item>
-      <title>מסר קצר לחודש אלול-ג</title>
-      <description>שיעורים ושיחות בפרשת השבוע ומועדים</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">33540483</guid>
-      <pubDate>Tue, 30 Aug 2022 17:25:22 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/33540483" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:02:21</itunes:duration>
     </item>
     <item>
       <title>מסר קצר לחודש אלול-ד</title>
@@ -4048,6 +4039,15 @@
       <pubDate>Tue, 30 Aug 2022 17:25:22 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/33540477" length="0" type="audio/mpeg"/>
       <itunes:duration>00:02:10</itunes:duration>
+    </item>
+    <item>
+      <title>מסר קצר לחודש אלול-ג</title>
+      <description>שיעורים ושיחות בפרשת השבוע ומועדים</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">33540483</guid>
+      <pubDate>Tue, 30 Aug 2022 17:25:22 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/33540483" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:02:21</itunes:duration>
     </item>
     <item>
       <title>מסר קצר לחודש אלול-א</title>
@@ -4545,15 +4545,6 @@
       <itunes:duration>00:12:48</itunes:duration>
     </item>
     <item>
-      <title>שיעור ו</title>
-      <description>חיזוקים קצרים</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">35058223</guid>
-      <pubDate>Tue, 25 Apr 2023 12:24:00 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/35058223" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:01:36</itunes:duration>
-    </item>
-    <item>
       <title>שיעור ז</title>
       <description>חיזוקים קצרים</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
@@ -4561,6 +4552,15 @@
       <pubDate>Tue, 25 Apr 2023 12:24:00 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/35058224" length="0" type="audio/mpeg"/>
       <itunes:duration>00:01:32</itunes:duration>
+    </item>
+    <item>
+      <title>שיעור ו</title>
+      <description>חיזוקים קצרים</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">35058223</guid>
+      <pubDate>Tue, 25 Apr 2023 12:24:00 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/35058223" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:01:36</itunes:duration>
     </item>
     <item>
       <title>שיעור ה</title>
@@ -5940,15 +5940,6 @@
       <itunes:duration>00:03:18</itunes:duration>
     </item>
     <item>
-      <title>שמירת הלשון 22</title>
-      <description>ילדים, הלכה</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">42452807</guid>
-      <pubDate>Tue, 12 May 2026 23:01:00 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42452807" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:03:38</itunes:duration>
-    </item>
-    <item>
       <title>שמירת הלשון 23</title>
       <description>ילדים, הלכה</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
@@ -5956,6 +5947,15 @@
       <pubDate>Tue, 12 May 2026 23:01:00 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42452808" length="0" type="audio/mpeg"/>
       <itunes:duration>00:02:13</itunes:duration>
+    </item>
+    <item>
+      <title>שמירת הלשון 22</title>
+      <description>ילדים, הלכה</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">42452807</guid>
+      <pubDate>Tue, 12 May 2026 23:01:00 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42452807" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:03:38</itunes:duration>
     </item>
     <item>
       <title>שמירת הלשון 21</title>
@@ -15588,13 +15588,13 @@
       <itunes:duration>00:16:15</itunes:duration>
     </item>
     <item>
-      <title>שמירת הלשון 15)</title>
+      <title>שמירת הלשון 17.</title>
       <description>ילדים, הלכה</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">42435656</guid>
+      <guid isPermaLink="false">42435658</guid>
       <pubDate>Mon, 27 Apr 2026 13:46:01 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42435656" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:06:18</itunes:duration>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42435658" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:03:37</itunes:duration>
     </item>
     <item>
       <title>שמירת הלשון 16.</title>
@@ -15606,13 +15606,13 @@
       <itunes:duration>00:02:02</itunes:duration>
     </item>
     <item>
-      <title>שמירת הלשון 17.</title>
+      <title>שמירת הלשון 15)</title>
       <description>ילדים, הלכה</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">42435658</guid>
+      <guid isPermaLink="false">42435656</guid>
       <pubDate>Mon, 27 Apr 2026 13:46:01 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42435658" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:03:37</itunes:duration>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42435656" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:06:18</itunes:duration>
     </item>
     <item>
       <title>שמירת הלשון 18.</title>
