@@ -7,7 +7,7 @@
     <description>הרב גלעד שם-טוב - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Sun, 13 Sep 2026 19:19:01 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 21:57:17 +0000</lastBuildDate>
     <item>
       <title>חיי שרה</title>
       <description>שיעורים ושיחות בפרשת השבוע ומועדים</description>
@@ -6352,6 +6352,24 @@
       <pubDate>Tue, 09 Aug 2016 14:44:35 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/867211" length="0" type="audio/mpeg"/>
       <itunes:duration>00:15:09</itunes:duration>
+    </item>
+    <item>
+      <title>סיפורי ילדים מה טוב בקנס של 500 שח</title>
+      <description>סיפורי צדיקים ומעשיות</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">42759298</guid>
+      <pubDate>Tue, 08 Sep 2026 23:43:00 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42759298" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:30:07</itunes:duration>
+    </item>
+    <item>
+      <title>סיפורי ילדים מה טוב בקנס של 500 שח</title>
+      <description>סיפורי צדיקים ומעשיות</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">42759299</guid>
+      <pubDate>Tue, 08 Sep 2026 23:43:00 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42759299" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:30:07</itunes:duration>
     </item>
     <item>
       <title>הלכות חג הסוכות, ספר שולחן ערוך אורח חיים, ספר משניות</title>
