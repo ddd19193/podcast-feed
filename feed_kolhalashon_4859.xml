@@ -7,7 +7,7 @@
     <description>ברשות - מדברים הלכה והשקפה - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Tue, 15 Sep 2026 10:24:43 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Sep 2026 15:15:04 +0000</lastBuildDate>
     <item>
       <title>הצצה לעולמו הפנימי של בן ישיבה – אתגרים ומורכבויות</title>
       <description>ברשות - מדברים הלכה והשקפה</description>
@@ -16,6 +16,15 @@
       <pubDate>Wed, 12 Aug 2026 13:35:29 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42679689" length="0" type="audio/mpeg"/>
       <itunes:duration>01:37:37</itunes:duration>
+    </item>
+    <item>
+      <title>חזנות – מצוה או טרחה?</title>
+      <description>ברשות - מדברים הלכה והשקפה</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
+      <guid isPermaLink="false">42760890</guid>
+      <pubDate>Tue, 15 Sep 2026 13:41:12 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42760890" length="0" type="audio/mpeg"/>
+      <itunes:duration>01:00:00</itunes:duration>
     </item>
     <item>
       <title>מהם האתגרים איתם מתמודדים תלמידי הישיבות כיום?</title>
