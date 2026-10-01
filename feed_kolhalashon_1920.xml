@@ -7,7 +7,7 @@
     <description>הרב גלעד שם-טוב - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Thu, 01 Oct 2026 02:37:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2026 09:25:29 +0000</lastBuildDate>
     <item>
       <title>מסר לפרשת וארא - המפתח לעיצוב האישיות</title>
       <description>ווארטים קצרים בפרשת השבוע</description>
@@ -196,15 +196,6 @@
       <pubDate>Wed, 21 May 2025 00:15:19 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41734848" length="0" type="audio/mpeg"/>
       <itunes:duration>00:09:19</itunes:duration>
-    </item>
-    <item>
-      <title>5דקות פרשה פרשת אמור 4</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41734790</guid>
-      <pubDate>Wed, 21 May 2025 00:06:54 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41734790" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:10:01</itunes:duration>
     </item>
     <item>
       <title>וארא 2</title>
@@ -1143,15 +1134,6 @@
       <itunes:duration>00:03:18</itunes:duration>
     </item>
     <item>
-      <title>שמירת הלשון 23</title>
-      <description>ילדים, הלכה</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">42452808</guid>
-      <pubDate>Tue, 12 May 2026 23:01:00 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42452808" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:02:13</itunes:duration>
-    </item>
-    <item>
       <title>שמירת הלשון 22</title>
       <description>ילדים, הלכה</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
@@ -1159,6 +1141,15 @@
       <pubDate>Tue, 12 May 2026 23:01:00 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42452807" length="0" type="audio/mpeg"/>
       <itunes:duration>00:03:38</itunes:duration>
+    </item>
+    <item>
+      <title>שמירת הלשון 23</title>
+      <description>ילדים, הלכה</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">42452808</guid>
+      <pubDate>Tue, 12 May 2026 23:01:00 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42452808" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:02:13</itunes:duration>
     </item>
     <item>
       <title>שמירת הלשון 21</title>
@@ -1780,6 +1771,15 @@
       <pubDate>Thu, 03 Sep 2026 15:24:17 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42703963" length="0" type="audio/mpeg"/>
       <itunes:duration>00:06:49</itunes:duration>
+    </item>
+    <item>
+      <title>מסר להושענא רבה - הזדמנות אחרונה לשינוי</title>
+      <description>ווארטים קצרים בפרשת השבוע</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">42768516</guid>
+      <pubDate>Thu, 01 Oct 2026 08:57:13 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42768516" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:05:57</itunes:duration>
     </item>
     <item>
       <title>נס ההצלה של משפחת סוכות</title>
@@ -2880,13 +2880,13 @@
       <itunes:duration>00:08:59</itunes:duration>
     </item>
     <item>
-      <title>שמירת הלשון 17.</title>
+      <title>שמירת הלשון 15)</title>
       <description>ילדים, הלכה</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">42435658</guid>
+      <guid isPermaLink="false">42435656</guid>
       <pubDate>Mon, 27 Apr 2026 13:46:01 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42435658" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:03:37</itunes:duration>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42435656" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:06:18</itunes:duration>
     </item>
     <item>
       <title>שמירת הלשון 16.</title>
@@ -2898,13 +2898,13 @@
       <itunes:duration>00:02:02</itunes:duration>
     </item>
     <item>
-      <title>שמירת הלשון 15)</title>
+      <title>שמירת הלשון 17.</title>
       <description>ילדים, הלכה</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">42435656</guid>
+      <guid isPermaLink="false">42435658</guid>
       <pubDate>Mon, 27 Apr 2026 13:46:01 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42435656" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:06:18</itunes:duration>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42435658" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:03:37</itunes:duration>
     </item>
     <item>
       <title>שמירת הלשון 18.</title>
