@@ -7,7 +7,7 @@
     <description>ברשות - מדברים הלכה והשקפה - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Tue, 13 Oct 2026 08:05:10 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2026 16:16:09 +0000</lastBuildDate>
     <item>
       <title>הצצה לעולמו הפנימי של בן ישיבה – אתגרים ומורכבויות</title>
       <description>ברשות - מדברים הלכה והשקפה</description>
@@ -43,6 +43,15 @@
       <pubDate>Tue, 14 Jul 2026 12:03:20 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42605287" length="0" type="audio/mpeg"/>
       <itunes:duration>00:56:23</itunes:duration>
+    </item>
+    <item>
+      <title>חתונה עם דירה - חיוב הלכתי או ציפייה חברתית?</title>
+      <description>ברשות - מדברים הלכה והשקפה</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
+      <guid isPermaLink="false">42779094</guid>
+      <pubDate>Tue, 13 Oct 2026 13:00:04 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42779094" length="0" type="audio/mpeg"/>
+      <itunes:duration>01:01:12</itunes:duration>
     </item>
     <item>
       <title>תקיעת שופר – מתי יוצאים ידי חובה?</title>
