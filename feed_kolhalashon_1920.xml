@@ -7,7 +7,7 @@
     <description>הרב גלעד שם-טוב - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Wed, 14 Oct 2026 07:59:13 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 14:08:27 +0000</lastBuildDate>
     <item>
       <title>מסר לפרשת וארא - המפתח לעיצוב האישיות</title>
       <description>ווארטים קצרים בפרשת השבוע</description>
@@ -162,15 +162,6 @@
       <itunes:duration>00:08:58</itunes:duration>
     </item>
     <item>
-      <title>מסר לפרשת קדושים - חבל שלא היית!</title>
-      <description>ווארטים קצרים בפרשת השבוע</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41724602</guid>
-      <pubDate>Wed, 21 May 2025 06:59:40 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41724602" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:05:30</itunes:duration>
-    </item>
-    <item>
       <title>וארא 2</title>
       <description>סיפורי צדיקים ומעשיות</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
@@ -295,6 +286,15 @@
       <pubDate>Wed, 15 Jul 2026 14:33:05 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42606104" length="0" type="audio/mpeg"/>
       <itunes:duration>00:33:23</itunes:duration>
+    </item>
+    <item>
+      <title>פרשת נח דירה חדשה בחינם</title>
+      <description>סיפורי צדיקים ומעשיות</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">42781326</guid>
+      <pubDate>Wed, 14 Oct 2026 14:55:41 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42781326" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:16:56</itunes:duration>
     </item>
     <item>
       <title>שמירת הלשון לחשוב על השני</title>
