@@ -7,7 +7,7 @@
     <description>ברשות - מדברים הלכה והשקפה - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Mon, 19 Oct 2026 06:32:16 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2026 15:01:46 +0000</lastBuildDate>
     <item>
       <title>הצצה לעולמו הפנימי של בן ישיבה – אתגרים ומורכבויות</title>
       <description>ברשות - מדברים הלכה והשקפה</description>
@@ -79,6 +79,15 @@
       <pubDate>Mon, 24 Aug 2026 20:00:43 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42691271" length="0" type="audio/mpeg"/>
       <itunes:duration>00:58:04</itunes:duration>
+    </item>
+    <item>
+      <title>״היתר קירוב״ – האם מותר להתיר איסורים לצורך קירוב? האם המטרה מקדשת את האמצעים?</title>
+      <description>ברשות - מדברים הלכה והשקפה</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
+      <guid isPermaLink="false">42784570</guid>
+      <pubDate>Mon, 19 Oct 2026 13:15:41 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42784570" length="0" type="audio/mpeg"/>
+      <itunes:duration>01:29:32</itunes:duration>
     </item>
     <item>
       <title>שידוכים –  מה צריך לגלות במהלך פגישות וכדומה?</title>
