@@ -7,7 +7,7 @@
     <description>תוכנית האקטואליה המרכזית של הבוקר ב"קול חי", בה מתראיינים אישי ציבור ופוליטיקאים, אנשי כלכלה ופרשנים, בכל ענייני היום במגזר הכללי והחרדי כאחד.</description>
     <link>https://www.emess.co.il/audio/program/421</link>
     <language>he-il</language>
-    <lastBuildDate>Tue, 20 Oct 2026 00:24:33 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 06:00:26 +0000</lastBuildDate>
     <itunes:image href="https://www.emess.co.il/wp-content/uploads/2024/05/דוד-חכם-בצלאל-קאהן.png"/>
     <item>
       <title>מהדורת הבוקר  – 31.07.24</title>
@@ -51,6 +51,15 @@
       <guid isPermaLink="false">1775897</guid>
       <pubDate>Wed, 29 Oct 2025 09:12:13 +0300</pubDate>
       <enclosure url="https://www.emess.co.il/wp-content/uploads/2025/10/2025-10-29-08-00-01.mp3" length="0" type="audio/mpeg"/>
+      <itunes:image href="https://www.emess.co.il/wp-content/uploads/2024/05/דוד-חכם-בצלאל-קאהן.png"/>
+      </item>
+    <item>
+      <title>מהדורת הבוקר – כ"א אייר תשפ"ד – 29.05.2024</title>
+      <description>מהדורת הבוקר – כ"א אייר תשפ"ד – 29.05.2024</description>
+      <link>https://www.emess.co.il/radio/broadcast/%d7%9e%d7%94%d7%93%d7%95%d7%a8%d7%aa-%d7%94%d7%91%d7%95%d7%a7%d7%a8-%d7%9b%d7%90-%d7%90%d7%99%d7%99%d7%a8-%d7%aa%d7%a9%d7%a4%d7%93-29-05-2024</link>
+      <guid isPermaLink="false">1027506</guid>
+      <pubDate>Wed, 29 May 2024 05:59:35 +0300</pubDate>
+      <enclosure url="https://media.kcm.fm/wp-uploads/2024/05/קול-חי-מעובד-2024-05-29-08-00-10.mp3" length="0" type="audio/mpeg"/>
       <itunes:image href="https://www.emess.co.il/wp-content/uploads/2024/05/דוד-חכם-בצלאל-קאהן.png"/>
       </item>
     <item>
