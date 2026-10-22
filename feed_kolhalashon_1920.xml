@@ -7,7 +7,7 @@
     <description>הרב גלעד שם-טוב - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Thu, 22 Oct 2026 10:37:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 15:44:12 +0000</lastBuildDate>
     <item>
       <title>מסר לפרשת וארא - המפתח לעיצוב האישיות</title>
       <description>ווארטים קצרים בפרשת השבוע</description>
@@ -1566,60 +1566,6 @@
       <itunes:duration>00:08:57</itunes:duration>
     </item>
     <item>
-      <title>קריאה 3 לבן הארמי, הגדה של פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41691545</guid>
-      <pubDate>Tue, 01 Apr 2025 00:54:40 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41691545" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:10:27</itunes:duration>
-    </item>
-    <item>
-      <title>קריאה 2 ארבעת הבנים, הגדה של פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41691544</guid>
-      <pubDate>Tue, 01 Apr 2025 00:53:36 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41691544" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:06:02</itunes:duration>
-    </item>
-    <item>
-      <title>קריאה 1 מעבדים הינו עד לימות המשיח, הגדה של פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41691542</guid>
-      <pubDate>Tue, 01 Apr 2025 00:52:37 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41691542" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:02:27</itunes:duration>
-    </item>
-    <item>
-      <title>שיר מה נשתנה, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41691541</guid>
-      <pubDate>Tue, 01 Apr 2025 00:50:43 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41691541" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:02:18</itunes:duration>
-    </item>
-    <item>
-      <title>שיר והיא שעמדה, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41691540</guid>
-      <pubDate>Tue, 01 Apr 2025 00:49:33 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41691540" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:02:42</itunes:duration>
-    </item>
-    <item>
-      <title>שיר אחד מי יודע, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41691539</guid>
-      <pubDate>Tue, 01 Apr 2025 00:47:58 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41691539" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:05:59</itunes:duration>
-    </item>
-    <item>
       <title>סיפורי ילדים הטיול המסוכן</title>
       <description>סיפורי צדיקים ומעשיות</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
@@ -1780,6 +1726,15 @@
       <pubDate>Thu, 24 Jul 2025 10:55:10 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41832322" length="0" type="audio/mpeg"/>
       <itunes:duration>00:10:09</itunes:duration>
+    </item>
+    <item>
+      <title>מסר לפרשת לך לך - דרך אמונה בחרתי</title>
+      <description>ווארטים קצרים בפרשת השבוע</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">42787186</guid>
+      <pubDate>Thu, 22 Oct 2026 14:07:38 +0300</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42787186" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:07:31</itunes:duration>
     </item>
     <item>
       <title>מסר לפרשת כי תצא - הדמעות שהצילו את הילד</title>
@@ -2104,24 +2059,6 @@
       <pubDate>Sun, 31 Aug 2025 22:52:28 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41984753" length="0" type="audio/mpeg"/>
       <itunes:duration>00:07:28</itunes:duration>
-    </item>
-    <item>
-      <title>מסר לפורים - עכברים למשלוח מנות</title>
-      <description>ווארטים קצרים בפרשת השבוע</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41675491</guid>
-      <pubDate>Sun, 30 Mar 2025 23:03:16 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41675491" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:08:55</itunes:duration>
-    </item>
-    <item>
-      <title>חידון ויקרא</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41690112</guid>
-      <pubDate>Sun, 30 Mar 2025 23:00:51 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41690112" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:06:13</itunes:duration>
     </item>
     <item>
       <title>5דקות פרשה חקת 4, פרשת חוקת</title>
@@ -2878,33 +2815,6 @@
       <pubDate>Sun, 06 Jul 2025 10:00:00 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41825448" length="0" type="audio/mpeg"/>
       <itunes:duration>00:03:07</itunes:duration>
-    </item>
-    <item>
-      <title>הכנה לליל הסדר  כל סימן מה פירושו ומה עושים, הלכות פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700296</guid>
-      <pubDate>Sun, 06 Apr 2025 21:15:28 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700296" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:30:12</itunes:duration>
-    </item>
-    <item>
-      <title>הכנה לליל הסדר 1, הלכות פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700294</guid>
-      <pubDate>Sun, 06 Apr 2025 21:13:25 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700294" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:12:52</itunes:duration>
-    </item>
-    <item>
-      <title>מסר לפרשת ויקהל - הַסּוֹד שֶׁל הַמַּרְאָה</title>
-      <description>ווארטים קצרים בפרשת השבוע</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41682491</guid>
-      <pubDate>Sun, 06 Apr 2025 09:02:49 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41682491" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:08:50</itunes:duration>
     </item>
     <item>
       <title>5דקות פרשה פרשת אחרי מות 5</title>
@@ -4579,132 +4489,6 @@
       <pubDate>Mon, 07 Apr 2025 12:52:07 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700713" length="0" type="audio/mpeg"/>
       <itunes:duration>00:09:04</itunes:duration>
-    </item>
-    <item>
-      <title>יציאת מצרים</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700709</guid>
-      <pubDate>Mon, 07 Apr 2025 12:47:05 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700709" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:04:35</itunes:duration>
-    </item>
-    <item>
-      <title>עשרת המכות מכת בכורות, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700704</guid>
-      <pubDate>Mon, 07 Apr 2025 12:41:44 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700704" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:05:29</itunes:duration>
-    </item>
-    <item>
-      <title>עשרת המכות מכת חושך, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700701</guid>
-      <pubDate>Mon, 07 Apr 2025 12:36:52 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700701" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:03:51</itunes:duration>
-    </item>
-    <item>
-      <title>עשרת המכות מכת הרבה, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700562</guid>
-      <pubDate>Mon, 07 Apr 2025 12:34:20 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700562" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:06:26</itunes:duration>
-    </item>
-    <item>
-      <title>עשרת המכות מכת ברד, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700552</guid>
-      <pubDate>Mon, 07 Apr 2025 12:23:51 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700552" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:04:36</itunes:duration>
-    </item>
-    <item>
-      <title>עשרת המכות מכת שחין, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700549</guid>
-      <pubDate>Mon, 07 Apr 2025 12:14:31 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700549" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:04:49</itunes:duration>
-    </item>
-    <item>
-      <title>עשרת המכות מכת דבר, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700547</guid>
-      <pubDate>Mon, 07 Apr 2025 12:12:01 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700547" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:04:22</itunes:duration>
-    </item>
-    <item>
-      <title>עשרת המכות מכת ערוב, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700546</guid>
-      <pubDate>Mon, 07 Apr 2025 12:08:53 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700546" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:11:25</itunes:duration>
-    </item>
-    <item>
-      <title>עשרת המכות מכת כינים, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700545</guid>
-      <pubDate>Mon, 07 Apr 2025 12:06:15 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700545" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:04:04</itunes:duration>
-    </item>
-    <item>
-      <title>עשרת המכות מכת צפרדע, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700542</guid>
-      <pubDate>Mon, 07 Apr 2025 12:01:36 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700542" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:06:30</itunes:duration>
-    </item>
-    <item>
-      <title>עשרת המכות מכת דם, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700540</guid>
-      <pubDate>Mon, 07 Apr 2025 11:57:30 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700540" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:08:27</itunes:duration>
-    </item>
-    <item>
-      <title>חד גדיא, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700534</guid>
-      <pubDate>Mon, 07 Apr 2025 11:52:34 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700534" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:03:50</itunes:duration>
-    </item>
-    <item>
-      <title>חד גדיא, פסח</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700528</guid>
-      <pubDate>Mon, 07 Apr 2025 11:47:15 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700528" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:03:50</itunes:duration>
-    </item>
-    <item>
-      <title>סיפורי ילדים משה למדני והסוד של אהרון חסדאי חברו</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41700523</guid>
-      <pubDate>Mon, 07 Apr 2025 11:42:48 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41700523" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:23:31</itunes:duration>
     </item>
     <item>
       <title>סיפורי ילדים המשקפים האבודות של מיכאל שמעונוב</title>
