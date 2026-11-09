@@ -7,7 +7,7 @@
     <description>ברשות - מדברים הלכה והשקפה - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Mon, 09 Nov 2026 08:08:39 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2026 18:52:01 +0000</lastBuildDate>
     <item>
       <title>הצצה לעולמו הפנימי של בן ישיבה – אתגרים ומורכבויות</title>
       <description>ברשות - מדברים הלכה והשקפה</description>
@@ -106,6 +106,15 @@
       <pubDate>Mon, 17 Aug 2026 17:51:36 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42684276" length="0" type="audio/mpeg"/>
       <itunes:duration>01:18:56</itunes:duration>
+    </item>
+    <item>
+      <title>כיצד מנווט ראש הישיבה את הישיבה עם אתגרי דורנו</title>
+      <description>ברשות - מדברים הלכה והשקפה</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/4859/1/1</link>
+      <guid isPermaLink="false">42806128</guid>
+      <pubDate>Mon, 09 Nov 2026 16:29:45 +0200</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42806128" length="0" type="audio/mpeg"/>
+      <itunes:duration>01:21:15</itunes:duration>
     </item>
     <item>
       <title>מה ניקח איתנו לשנה החדשה? – דברי תורה, קבלות ועצות מגדולי ישראל</title>
