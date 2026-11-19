@@ -7,7 +7,7 @@
     <description>הרב גלעד שם-טוב - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Thu, 19 Nov 2026 03:21:52 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 13:03:36 +0000</lastBuildDate>
     <item>
       <title>מסר לפרשת וארא - המפתח לעיצוב האישיות</title>
       <description>ווארטים קצרים בפרשת השבוע</description>
@@ -810,15 +810,6 @@
       <itunes:duration>00:29:08</itunes:duration>
     </item>
     <item>
-      <title>סיפורי ילדים שעון זהב בחינם</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41740137</guid>
-      <pubDate>Tue, 27 May 2025 00:19:28 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41740137" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:04:18</itunes:duration>
-    </item>
-    <item>
       <title>שמירת הלשון 37</title>
       <description>ילדים, הלכה</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
@@ -943,6 +934,15 @@
       <pubDate>Tue, 19 Aug 2025 02:53:22 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41973997" length="0" type="audio/mpeg"/>
       <itunes:duration>00:05:27</itunes:duration>
+    </item>
+    <item>
+      <title>פרשת ויצא הזקן הנסתר</title>
+      <description>סיפורי צדיקים ומעשיות</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">42918251</guid>
+      <pubDate>Tue, 17 Nov 2026 14:30:00 +0200</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42918251" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:22:07</itunes:duration>
     </item>
     <item>
       <title>סיפורי ילדים המדבקה שהצילה</title>
@@ -1548,6 +1548,15 @@
       <itunes:duration>00:08:56</itunes:duration>
     </item>
     <item>
+      <title>מסר לפרשת ויצא - ויתור שמניב תוצאות</title>
+      <description>ווארטים קצרים בפרשת השבוע</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">42918217</guid>
+      <pubDate>Thu, 19 Nov 2026 13:34:53 +0200</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42918217" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:07:19</itunes:duration>
+    </item>
+    <item>
       <title>שמירת הלשון 2 לילדים (2)</title>
       <description>ילדים, הלכה</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
@@ -2005,15 +2014,6 @@
       <pubDate>Sun, 26 Apr 2026 08:35:49 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42441258" length="0" type="audio/mpeg"/>
       <itunes:duration>00:07:43</itunes:duration>
-    </item>
-    <item>
-      <title>סיפור חייו של דוד המלך 3</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41739052</guid>
-      <pubDate>Sun, 25 May 2025 22:30:08 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41739052" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:04:32</itunes:duration>
     </item>
     <item>
       <title>סיפורי ילדים אבי יוזמתי הנהג העקשן</title>
