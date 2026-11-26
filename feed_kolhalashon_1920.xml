@@ -7,7 +7,7 @@
     <description>הרב גלעד שם-טוב - קול הלשון</description>
     <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
     <language>he-il</language>
-    <lastBuildDate>Thu, 26 Nov 2026 05:10:31 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 15:14:58 +0000</lastBuildDate>
     <item>
       <title>מסר לפרשת וארא - המפתח לעיצוב האישיות</title>
       <description>ווארטים קצרים בפרשת השבוע</description>
@@ -792,24 +792,6 @@
       <itunes:duration>00:30:01</itunes:duration>
     </item>
     <item>
-      <title>מסר לפרשת אמור - 140 מנות במתנה!</title>
-      <description>ווארטים קצרים בפרשת השבוע</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41729888</guid>
-      <pubDate>Tue, 27 May 2025 16:59:13 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41729888" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:08:45</itunes:duration>
-    </item>
-    <item>
-      <title>סיפורי ילדים מי גנב את הארנק עם 50 אלף שקל</title>
-      <description>סיפורי צדיקים ומעשיות</description>
-      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
-      <guid isPermaLink="false">41740140</guid>
-      <pubDate>Tue, 27 May 2025 00:20:50 +0300</pubDate>
-      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/41740140" length="0" type="audio/mpeg"/>
-      <itunes:duration>00:29:08</itunes:duration>
-    </item>
-    <item>
       <title>שמירת הלשון 37</title>
       <description>ילדים, הלכה</description>
       <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
@@ -862,6 +844,15 @@
       <pubDate>Tue, 26 May 2026 14:16:59 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42559338" length="0" type="audio/mpeg"/>
       <itunes:duration>00:39:11</itunes:duration>
+    </item>
+    <item>
+      <title>פרשת וישלח  הסנדויץ</title>
+      <description>סיפורי צדיקים ומעשיות</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">42929340</guid>
+      <pubDate>Tue, 24 Nov 2026 15:33:00 +0200</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42929340" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:25:33</itunes:duration>
     </item>
     <item>
       <title>חנוכה 9</title>
@@ -1483,6 +1474,15 @@
       <pubDate>Thu, 27 Aug 2026 16:14:40 +0300</pubDate>
       <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42694530" length="0" type="audio/mpeg"/>
       <itunes:duration>00:07:04</itunes:duration>
+    </item>
+    <item>
+      <title>פרשת וישלח - השוקולד והמכתב</title>
+      <description>ווארטים קצרים בפרשת השבוע</description>
+      <link>https://www.kolhalashon.com/he/regularSite/ravs/1920/1/1</link>
+      <guid isPermaLink="false">42929123</guid>
+      <pubDate>Thu, 26 Nov 2026 13:24:00 +0200</pubDate>
+      <enclosure url="https://www.kolhalashon.com/api/files/GetMp3FileToPlay/42929123" length="0" type="audio/mpeg"/>
+      <itunes:duration>00:10:53</itunes:duration>
     </item>
     <item>
       <title>צום גדליה מה היה שם ומדוע צמים תשפו</title>
